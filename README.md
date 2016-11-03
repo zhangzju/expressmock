@@ -1,0 +1,2 @@
+# expressmock
+使用Express来模拟一个能够返回JSON以及其他格式的API数据的Server
