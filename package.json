@@ -1,0 +1,27 @@
+{
+  "name": "expressmock",
+  "version": "1.0.0",
+  "description": "使用Express来模拟一个能够返回JSON以及其他格式的API数据的Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangzju/expressmock.git"
+  },
+  "author": "zhangzju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangzju/expressmock/issues"
+  },
+  "homepage": "https://github.com/zhangzju/expressmock#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "multer": "^1.2.0"
+  }
+}
