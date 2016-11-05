@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function (req, res, next) {
-   return res.render('index', { title: '主页' });
+   return res.render('mockmongo', { title: 'MockMongo' });
 });
 
 router.get('/zhang', function(req,res,next){
