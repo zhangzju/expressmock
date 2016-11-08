@@ -13,6 +13,10 @@ router.post('/zhang', function(req, res, next) {
   return res.json({ method: 'post'});
 });
 
+router.get('/zhang/:user', function(req,res,next){
+  return res.json({ user: 'username' });
+});
+
 
 
 
