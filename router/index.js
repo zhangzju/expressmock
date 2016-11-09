@@ -10,7 +10,11 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/zhang', function(req,res,next){
-  return res.json({ user: 'zhang' });
+  return res.json({ ip: req.ip , hostname: req.hostname});
+});
+
+router.get('/user/:id', function(req, res) {
+  return res.json({user : req.params.id});
 });
 
 router.post('/zhang', function(req, res, next) {

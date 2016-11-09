@@ -5,19 +5,5 @@ router.get('/', function (req, res, next) {
    return res.render('mockmongo', { title: 'MockMongo' });
 });
 
-router.get('/zhang', function(req,res,next){
-  return res.json({ user: 'zhang' });
-});
-
-router.post('/zhang', function(req, res, next) {
-  return res.json({ method: 'post'});
-});
-
-router.get('/zhang/:user', function(req,res,next){
-  return res.json({ user: 'username' });
-});
-
-
-
 
 module.exports = router;
