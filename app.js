@@ -4,7 +4,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var routes = require('./router/index');
-var mockmongo = require('./router/mockmongo');
 
 var app = express();
 
@@ -19,7 +18,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/',routes);
-app.use('/mongo',mockmongo);
 
 
 app.use(function(req, res, next) {
