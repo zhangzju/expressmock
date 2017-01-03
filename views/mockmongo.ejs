@@ -13,6 +13,24 @@
   <header>
     <h1>MonkMongo <small><%= title%></small></h1>
   </header>
+  <main>
+    <h1 id="page-title"><%= title %></h1>
+
+<div id="list">
+  <form action="/create" method="post" accept-charset="utf-8">
+    <div class="item-new">
+      <input class="input" type="text" name="content" />
+    </div>
+  </form>
+
+<% users.forEach( function ( user ){ %>
+  <div class="item">
+    <a href="/edit/<%= todo._id %>" title="Update this todo item"><%= user.name %></a>
+    <a href="/destroy/<%= todo._id %>" title="Delete this todo item">Delete</a>
+  </div>
+<% }); %>
+</div>
+  </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
 </body>

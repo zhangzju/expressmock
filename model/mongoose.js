@@ -7,4 +7,6 @@ var userSchema = new mongoose.Schema({
   age:Number
 });
 
+
+
 var userModel = mongoose.model('User', userSchema);
