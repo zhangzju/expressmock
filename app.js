@@ -1,4 +1,3 @@
-require('./model/mongoose');
 
 var express = require('express');
 var path = require('path');
@@ -6,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var routes = require('./router/index');
+var restc = require('restc');
 
 var app = express();
 
@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(restc.express());
 
 app.use('/',routes);
 
