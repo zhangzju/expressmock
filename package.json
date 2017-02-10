@@ -18,10 +18,13 @@
   },
   "homepage": "https://github.com/zhangzju/expressmock#readme",
   "dependencies": {
+    "amazeui": "^2.7.2",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.6.6",
     "multer": "^1.2.0"
   }
 }
