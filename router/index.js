@@ -17,10 +17,6 @@ router.get('/user/:id', function(req, res) {
   return res.json({user : req.params.id});
 });
 
-router.post('/zhang', function(req, res, next) {
-  return res.json({ method: 'post'});
-});
-
 router.post('/profile', upload.array(), function (req, res, next) {
   console.log(req.body);
   res.json(req.body);
