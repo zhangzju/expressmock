@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
    return res.render('index', { title: '主页' });
 });
 
-router.get('/zhang', function(req,res,next){
+router.get('/ip', function(req,res,next){
   return res.json({ ip: req.ip , hostname: req.hostname});
 });
 
